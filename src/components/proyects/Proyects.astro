@@ -1,0 +1,35 @@
+---
+
+import TitleSections from '../helpers/TitleSections.astro'
+import CardProyects from './CardProyects.astro'
+
+// import '../../styles/acerca/acerca.css'
+---
+<section id="proyectos" class=" bg-black px-4 lg:px-[60px] pt-[30px] lg:pb-[100px] pb-10">
+  <div class="mx-auto max-w-[1200px] flex justify-center flex-col items-center">
+    <TitleSections title='Proyectos' text='“Mis últimos proyectos”' bgColor='bg-blueviolet' />
+    <CardProyects
+      author='Enel'
+      date='Agosto. 15, 2022'
+      tags={['Code: ', 'JavaScript', 'HTML', 'Taildwind', 'NunJucks']}
+      title='Gánale a la ciudad X'
+      subTitle='Juego de buscar la X'
+      text='Desarrollé un juego para Enel, la empresa de energía de Bogotá. El juego, que incluye validaciones de entradas y peticiones al backend con Ajax, desafía a los usuarios a encontrar 10 ‘X’.'
+      urlProyect='https://ganale-a-la-ciudad-x.netlify.app/#register'
+      urlCompany='https://www.enel.com.co/es.html'
+      img='/img/img-enel-x.png'
+    />
+    <CardProyects
+      author='WWF'
+      date='FEB. 20, 2023'
+      imgRight={true}
+      tags={['Code: ', 'JavaScript', 'React.js', 'HTML', 'Astro', 'Taildwind']}
+      title='Incendios WWF'
+      subTitle='Landing de donaciones Amazonas'
+      text='Es una página de aterrizaje que recibe donaciones para los incendios en el Amazonas, acepta pagos a través de Mercado Pago y utiliza HubSpot para recoger la información ingresada.'
+      urlProyect='https://f.code-labs.com/websites/wwf/incendios-2023_v21/'
+      urlCompany='#'
+      img='/img/img-wwf.png'
+    />
+  </div>
+</section>

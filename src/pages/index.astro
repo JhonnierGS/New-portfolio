@@ -1,0 +1,23 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/navbar/Header.astro';
+import FormEmail from '../components/contact/Form.astro'
+import Home from '../components/home/Home.astro'
+import Acerca from '../components/acerca/Acerca.astro'
+import Servicios from '../components/servicios/Servicios.astro'
+import Proyects from '../components/proyects/Proyects.astro'
+---
+
+<Layout title="Welcome to Astro.">
+	<main class="background_home ">
+		<div class="background_opacityHome pt-4">
+			<Header />
+			<Home />
+			<Acerca />
+			<Servicios />
+			<Proyects />
+			<FormEmail />
+		</div>
+	</main>
+</Layout>
+

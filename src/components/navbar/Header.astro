@@ -1,0 +1,47 @@
+---
+import MenuBars from '../icons/MenuBars.astro'
+import MenuX from '../icons/MenuX.astro';
+import '../../styles/navbar/heander.css'
+
+
+---
+
+<header class="px-4 mx-auto max-w-[985px] lg:px-6 sticky top-0 z-50">
+  <nav class="overflow-hidden rounded-2xl">
+    <section class="relative w-full z-20 bg-dark_content rounded-2xl py-2 px-8 sm:flex justify-between items-center">
+      <div class="flex justify-between items-center">
+        <a href="#inicio" class="flex justify-center items-center gap-3">
+          <img class="w-10 h-10 rounded-full" src="/img/logo.jpg" alt="logo-gs">
+          <p class="underLine_menuText text-white text-base cursor-pointer">Inicio</p>
+        </a>
+    
+        <div id="MenuNavBar" class="w-8 h-8 bg-dark rounded-xl sm:hidden flex justify-center items-center">
+          <span id="barsIcon">
+            <MenuBars height='18px' width='18px' color='#fff'/>
+          </span>
+          <span id="Xicon" class="hidden">
+            <MenuX height='18px' width='18px' color='#fff'/>
+          </span>
+        </div>
+      </div>
+      
+      <ul class="hidden text-white text-base sm:flex justify-center flex-wrap gap-x-4">
+        <li><a class="underLine_menuText" href="#acercaDe">Acreca de</a></li>
+        <li><a class="underLine_menuText" href="#servicios">Servicios</a></li>
+        <li><a class="underLine_menuText" href="#proyectos">Proyectos</a></li>
+        <li><a class="underLine_menuText" href="#contacto">Contacto</a></li>
+      </ul>
+    </section>
+    <!-- menu desplegable mobile -->
+    <section id="menuMobile" class=" invisible translate-y-[-80px] transition-all duration-300 ease-linear w-full bg-dark_content rounded-b-2xl pb-3 pt-5 px-8 flex justify-between items-center sm:hidden">
+      <ul class="text-white text-base w-full flex justify-center flex-wrap gap-x-4">
+        <li><a href="#acercaDe">Acreca de</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </section>
+  </nav>
+</header>
+
+<script src="./Header.js"/>

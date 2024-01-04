@@ -1,0 +1,105 @@
+---
+import TitleSections from '../helpers/TitleSections.astro'
+import ItemsSkills from './ItemsSkills.astro';
+import HtmlIcon from '../icons/Html-icon.astro';
+import CssIcon from '../icons/Css-icon.astro';
+import JsIcon from '../icons/Js-icon.astro';
+import ReactIcon from '../icons/React-icon.astro';
+import SassIcon from '../icons/Sass-icon.astro';
+import TypeScriptIcon from '../icons/TypeScript-icon.astro';
+import TailwindIcon from '../icons/Taildwind-icon.astro';
+import GitIcon from '../icons/Git-icon.astro';
+import FigmaIcon from '../icons/Figma-icon.astro';
+import ViteIcon from '../icons/Vite-icon.astro';
+import NpmIcon from '../icons/Npm-icon.astro';
+import AstroIcon from '../icons/Astro-icon.astro';
+import '../../styles/servicios/servicios.css';
+---
+<section id="servicios" class=" bg-dark_content">
+  <div class="backgroundSection px-4 lg:px-[60px] pt-[30px] lg:pb-[100px] pb-10 flex flex-col items-center">
+    <TitleSections
+      title='Servicios'
+      text='“Tecnologías que manejo”'
+      bgColor='bg-blueviolet'
+    />
+    <main class="main_services">
+      <article class="article_services">
+        <div class="header">
+          <h2 class="h2_services">
+            <span>Skills</span>
+            <span>Front-End</span>
+          </h2>
+          <p class="p_services">
+            Te invito a explorar mi trayectoria de aprendizaje. Aquí puedes ver las diversas tecnologías que he dominado. Cada una de ellas ha sido un peldaño en mi camino hacia convertirme en un desarrollador más completo y versátil.
+          </p>
+          <!-- <a
+            href="https://twitter.com/intent/follow?screen_name=jh3yy"
+            target="_blank"
+            rel="noreferrer noopener"
+            >Follow</a
+          > -->
+        </div>
+        <div class="window">
+          <div class="scene">
+            <ul class="grid">
+              <ItemsSkills name='HTML'>
+                <HtmlIcon slot='icon' width='20px' height='20px' color='#8a2be2'/>
+              </ItemsSkills>
+              <ItemsSkills name='CSS'>
+                <CssIcon slot='icon' width='20px' height='20px' color='#8a2be2'/>
+              </ItemsSkills>
+              <ItemsSkills name='Java Script'>
+                <JsIcon slot='icon' width='20px' height='20px' color='#8a2be2'/>
+              </ItemsSkills>
+              <ItemsSkills name='React-JS'>
+                <ReactIcon slot='icon' width='20px' height='20px' color='#8a2be2'/>
+              </ItemsSkills>
+              <ItemsSkills name='SASS'>
+                <SassIcon slot='icon' width='20px' height='20px' color='#8a2be2'/>
+              </ItemsSkills>
+              <ItemsSkills name='TypeScript'>
+                <TypeScriptIcon slot='icon' width='20px' height='20px' color='#8a2be2'/>
+              </ItemsSkills>
+              <ItemsSkills name='Tailwind'>
+                <TailwindIcon slot='icon' width='20px' height='20px' color='#8a2be2'/>
+              </ItemsSkills>
+              <ItemsSkills name='Git'>
+                <GitIcon slot='icon' width='20px' height='20px' color='#8a2be2'/>
+              </ItemsSkills>
+              <ItemsSkills name='Figma'>
+                <FigmaIcon slot='icon' width='20px' height='20px' color='#8a2be2'/>
+              </ItemsSkills>
+              <ItemsSkills name='Vite'>
+                <ViteIcon slot='icon' width='20px' height='20px' color='#8a2be2'/>
+              </ItemsSkills>
+              <ItemsSkills name='NPM'>
+                <NpmIcon slot='icon' width='20px' height='20px' color='#8a2be2'/>
+              </ItemsSkills>
+              <ItemsSkills name='Astro'>
+                <AstroIcon slot='icon' width='20px' height='20px' color='#8a2be2'/>
+              </ItemsSkills>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </main>
+  </div>
+</section>
+
+
+<!-- <section class=" bg-violetrgba px-4 lg:px-[60px] pt-[30px] lg:pb-[100px] pb-10">
+  <div class="mx-auto max-w-[1200px] px-4 flex justify-center flex-col items-center">
+    <TitleSections
+      title='Servicios'
+      text='“Tecnologías que manejo”'
+      bgColor='bg-white'
+    />
+
+    <div class="flex justify-center flex-wrap gap-7">
+      <CardsTech />
+      <CardsTech />
+      <CardsTech />
+      <CardsTech />
+    </div>
+  </div>
+</section> -->

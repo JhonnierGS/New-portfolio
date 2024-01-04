@@ -1,0 +1,16 @@
+---
+import '../../styles/servicios/servicios.css'
+export interface Props {
+  name?: string
+}
+
+const { name } = Astro.props;
+---
+<li class="li_services">
+  <div class="item">
+    <div class="item__icon">
+      <slot name="icon"/>
+    </div>
+    <div class="item__text">{name}</div>
+  </div>
+</li>

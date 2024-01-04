@@ -1,0 +1,41 @@
+---
+import '../../styles/proyects/proyects.css'
+export interface Props {
+  author?: string
+	date?: string
+  imgRight?: boolean
+  tags?: string[]
+  title?: string
+  subTitle?: string
+  text?: string
+  urlProyect?: string
+  urlCompany?: string
+  img?: string
+}
+
+const { author, date, imgRight, tags, title, subTitle, text, urlProyect, urlCompany, img } = Astro.props;
+---
+<div class={imgRight ? 'blog-card alt' : 'blog-card'}>
+  <div class="meta">
+    <div class="photo" style={`background-image: url(${img})`}></div>
+    <ul class="details">
+      <li class="author"><a target="_blank" href={urlCompany}>{author}</a></li>
+      <li class="date">{date}</li>
+      <li class="tags">
+        <ul class="flex flex-wrap gap-[2px]">
+          {tags?.map(tag => (
+            <li><a>{tag}</a></li>
+          ))}
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="description">
+    <h1>{title}</h1>
+    <h2>{subTitle}</h2>
+    <p>{text}</p>
+    <p class="read-more">
+      <a target="_blank" href={urlProyect}>Ver proyecto</a>
+    </p>
+  </div>
+</div>

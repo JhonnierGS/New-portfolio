@@ -1,0 +1,67 @@
+---
+import Discord from '../icons/Discord.astro'
+import Twitter from '../icons/Twitter.astro'
+import Linkedin from '../icons/Linkedin.astro'
+import Github from '../icons/Github.astro'
+import TitleSections from '../helpers/TitleSections.astro'
+
+import '../../styles/acerca/acerca.css'
+---
+<section id="acercaDe" class=" bg-black px-4 lg:px-[60px] pt-[30px] lg:pb-[100px] pb-10">
+  <div class="mx-auto max-w-[1200px] flex justify-center flex-col items-center">
+    <TitleSections title='Acerca de' text='¿Quién soy?' bgColor='bg-blueviolet' />
+    <div class="flex justify-center flex-wrap gap-5 px-4 lg:px-8 mt-5">
+      <div>
+        <figure class="snip1477">
+          <img src="/img/img-acerca.jpg" alt="">
+          <div class="title">
+            <div>
+              <h2>Front</h2>
+              <h4>End</h4>
+            </div>
+          </div>
+          <figcaption>
+            <p>
+              Siempre estás a solo 10 días de distancia de hacer algo impactante (Brendan Eich)
+            </p>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="lg:w-[40%] lg:h-[565px] flex flex-col justify-between items-center lg:items-start">
+        <div class="flex flex-col gap-8">
+          <p class="text-white text-center lg:text-start">
+            Mi fascinación por la tecnología se remonta a muchos años atrás, lo que me ha llevado a especializarme en el desarrollo web. Esta trayectoria me ha brindado la oportunidad de trabajar en diversos proyectos y colaborar con equipos variados, permitiéndome conocer a personas que comparten mi pasión.
+          </p>
+          <p class="text-white text-center lg:text-start">
+            Como individuo creativo, disfruto creando música, realizando animaciones o transiciones, maquetando sitios web interactivos  y explorando nuevas tecnologías. Me emociona enfrentar desafíos interesantes y continuar aprendiendo en este campo del desarrollo.
+          </p>
+          <p class="text-white text-center lg:text-start">
+            Actualmente, continúo avanzando en el desarrollo frontend. Te invito a seguirme en las redes sociales para estar al tanto de mis últimos trabajos y actualizaciones.
+          </p>
+        </div>
+        <ul class="flex flex-wrap justify-center gap-4 pt-6">
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/jonathan-andres-gonzalez-saenz-/" class="icon_container">
+              <Linkedin width='27px' height='27px' color='#fff'/>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://github.com/JhonnierGS" class="icon_container">
+              <Github width='27px' height='27px' color='#fff'/>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://twitter.com/jhonnierGS" class="icon_container">
+              <Twitter width='27px' height='27px' color='#fff'/>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://discord.com/channels/@me" class="icon_container">
+              <Discord width='27px' height='27px' color='#fff'/>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
