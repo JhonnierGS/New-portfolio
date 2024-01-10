@@ -7,20 +7,20 @@ import CardProyects from './CardProyects.astro'
 ---
 <section id="proyectos" class=" bg-black px-4 lg:px-[60px] pt-[30px] lg:pb-[100px] pb-10">
   <div class="mx-auto max-w-[1200px] flex justify-center flex-col items-center">
-    <TitleSections title='Proyectos' text='“Mis últimos proyectos”' bgColor='bg-blueviolet' />
+    <TitleSections title='Proyectos' text='“Proyectos Destacados”' bgColor='bg-blueviolet' />
     <CardProyects
-      author='Enel'
+      author='Enel by Code/labs'
       date='Agosto. 15, 2022'
       tags={['Code: ', 'JavaScript', 'HTML', 'Taildwind', 'NunJucks']}
       title='Gánale a la ciudad X'
       subTitle='Juego de buscar la X'
       text='Desarrollé un juego para Enel, la empresa de energía de Bogotá. El juego, que incluye validaciones de entradas y peticiones al backend con Ajax, desafía a los usuarios a encontrar 10 ‘X’.'
       urlProyect='https://ganale-a-la-ciudad-x.netlify.app/#register'
-      urlCompany='https://www.enel.com.co/es.html'
+      urlCompany='https://www.code-labs.com/'
       img='/img/img-enel-x.png'
     />
     <CardProyects
-      author='WWF'
+      author='WWF by Code/labs'
       date='FEB. 20, 2023'
       imgRight={true}
       tags={['Code: ', 'JavaScript', 'React.js', 'HTML', 'Astro', 'Taildwind']}
@@ -28,8 +28,44 @@ import CardProyects from './CardProyects.astro'
       subTitle='Landing de donaciones Amazonas'
       text='Es una página de aterrizaje que recibe donaciones para los incendios en el Amazonas, acepta pagos a través de Mercado Pago y utiliza HubSpot para recoger la información ingresada.'
       urlProyect='https://f.code-labs.com/websites/wwf/incendios-2023_v21/'
-      urlCompany='#'
+      urlCompany='https://www.code-labs.com/'
       img='/img/img-wwf.png'
+    />
+    <CardProyects
+      author='Novaventa by Code/labs'
+      date='NOV/DIC, 2022/2023'
+      imgRight={false}
+      tags={['Code: ', 'JavaScript', 'HTML', 'Taildwind', 'NunJucks']}
+      title='Trivia Novaventa'
+      subTitle='JUEGO DE PREGUNTAS Y BÚSQUEDA'
+      text='Es un juego interactivo de selección múltiple con cronómetro, barra de progreso, tablero de marcador y búsqueda de ítems. Además, incluye peticiones Ajax y validaciones de entrada.'
+      urlProyect='https://novaventa-game-dev.netlify.app/'
+      urlCompany='https://www.code-labs.com/'
+      img='/img/img-novaventa.png'
+    />
+    <CardProyects
+      author='Davivienda by Code/labs'
+      date='Oct, 2023/2024'
+      imgRight={true}
+      tags={['Code: ', 'JavaScript', 'HTML', 'Astro', 'Taildwind']}
+      title='Libro Davivienda'
+      subTitle='LIBRO DE ECONOMÍA BANCO DAVIVIENDA'
+      text='Participé en el desarrollo de un libro web de economía que aborda el año actual del país. Contribuí en la edición del 2023 y en el 2024, ayudé en su migración a la tecnología moderna Astro.'
+      urlProyect='https://libro.daviviendacorredores.com/'
+      urlCompany='https://www.code-labs.com/'
+      img='/img/img-libro-davivienda.png'
+    />
+    <CardProyects
+      author='Intcomex by Me'
+      date='DIC, 2021'
+      imgRight={false}
+      tags={['Code: ', 'JavaScript', 'HTMl', 'CSS']}
+      title='Ruleta Ruta Intcomex'
+      subTitle='JUEGO DE LA RULETA'
+      text='Desarrollé un juego de ruleta de marcas como proyecto freelance. El objetivo del juego es regalar premios, creando una experiencia emocionante y gratificante para los usuarios.'
+      urlProyect='https://ruta-incomex.netlify.app/'
+      urlCompany='https://www.intcomex.com/'
+      img='/img/img-ruleta-incomex.png'
     />
   </div>
 </section>
